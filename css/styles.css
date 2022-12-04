@@ -1,0 +1,425 @@
+body {
+    font-family: 'Abel';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x :hidden;
+}
+
+
+.header {
+    height: 50vh;
+    background-image: linear-gradient(to bottom, #164A41,#4D774E);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 35vh, 0 100%);
+}
+
+
+.secondary-header {
+    height: 30vh;
+    background-image: linear-gradient(to bottom, #164A41,#4D774E);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 15vh, 0 100%);
+}
+
+.logo img {
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+
+
+.green-background-color{
+    background-color: #164A41;
+    
+}
+
+.color-text-nav{
+    color:#eee;
+}
+
+a{
+    color: #eee;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+    padding-bottom: 30px;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 50vh;
+    grid-template-areas:
+    "conta conta imagea imagea"
+    "imageb imageb contb contb"
+    "contc contc imagec imagec";
+    
+}
+
+.plans-container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+    padding: 15px;
+    grid-template-columns: 2fr 2fr 2fr;
+     /* grid-template-rows: 50vh;  */
+    grid-template-areas:
+    ". ptitle ."
+    "planaim planbim plancim"
+    "planaim planbim plancim"
+    "plana planb planc"
+    "plana planb planc";
+
+}
+
+.center{
+    align-items: center;
+}
+
+.plan-title{
+    grid-area: ptitle;
+}
+
+
+.plan-a-image{
+    min-height: 300px;
+    grid-area: planaim;
+    background-image: url("/images/bmedal.jpg");
+    background-size: cover;
+    border: 5px solid #164A41;
+}
+.plan-b-image{
+    min-height: 300px;
+    grid-area: planbim;
+    background-image: url("/images/smedal3.png");
+    background-size: cover;
+    border: 5px solid #164A41;
+}
+.plan-c-image{
+    min-height: 300px;
+    grid-area: plancim;
+    background-image: url("/images/gmedal1.jpg");
+    background-size: cover;
+    border: 5px solid #164A41;
+}
+
+.plan-a-desc{
+    grid-area: plana;
+}
+.plan-b-desc{
+    grid-area: planb;
+}
+.plan-c-desc{
+    grid-area: planc;
+}
+
+
+.text-color-green{
+    color:#164A41
+}
+
+.text-color-orange{
+    color: #BA3B0A;
+}
+
+img{
+    min-width: 100px;
+    width: 100%;
+    
+}
+
+
+.home-content-one{
+    grid-area: conta;
+    min-height: 300px;
+}
+
+.home-content-two{
+    grid-area: contb;
+    min-height: 300px;
+}
+
+.home-content-three{
+    grid-area: contc;
+    min-height: 300px;
+    
+}
+
+.home-image-one{
+    grid-area: imagea;
+    min-height: 300px;
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url("/images/homeim1.jpg");
+    border: 5px solid #164A41;
+    background-size: cover;
+}
+
+.smaller-text{
+    font-size: 1.5rem;
+}
+
+.home-image-two{
+    grid-area: imageb;
+    min-height: 250px;
+    
+    background-image: url("/images/secondpic.jpg");
+    border: 5px solid #164A41;
+    
+    background-size: cover;
+}
+.home-image-three{
+    grid-area: imagec;
+    min-height: 300px;
+    background-image: url("/images/positivereview.jpg");
+    border: 5px solid #164A41;
+    
+    background-size: cover;
+}
+
+.bolded { font-weight: bold; }
+
+
+
+.header-text-box {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.header-text {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+
+.sub-text-header {
+    display: block;
+    font-size: 20px;
+    font-weight: 750;
+    letter-spacing: 6px;
+}
+
+.btn:link,
+.btn:visited {
+    
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 80px;
+    transition: all .3s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:focus{
+    color:#BA3B0A;
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #BA3B0A;
+    font-size: 20px;
+}
+
+.btn-green {
+    background-color: #4D774E;
+    color: #0000;
+    font-size: 20px;
+}
+
+
+@media (max-width: 1000px) {
+    .container {
+      grid-template-columns: 2fr 2fr;
+      grid-template-areas:
+        "imagea imagea"
+        "conta conta"
+        "imageb imageb"
+        "contb contb"
+        "imagec imagec"
+        "contc contc";
+    }
+
+    .plans-container{
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas: 
+        "ptitle ptitle"
+        "sign sign"
+        "planaim planaim"
+        "plana plana"
+        "planbim planbim"
+        "planb planb"
+        "plancim plancim"
+        "planc planc";
+    }
+    
+  }
+
+  
+
+  * {
+    box-sizing: border-box;
+    font-family: "Abel";
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #e3e3e3;
+    border-radius: 8px;
+    align-self: center;
+  
+  }
+  
+  h1 {
+   
+    text-align: center;
+  }
+  
+  h2 {
+  
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .interest{
+      color:#164A41;
+    }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="name"],
+  input[type="url"],
+  textarea,
+  select {
+    border: 2px solid transparent;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+    color:grey;
+    margin-bottom: 30px;
+    transition: all 350ms;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #164A41;
+  }
+  
+  input:hover,
+  input:focus,
+  textarea:hover,
+  textarea:focus {
+    border: 2px solid #164A41;
+  }
+  
+  .container_inside {
+      display: flex;
+  
+      margin: 0 auto;
+      flex-direction: row;
+    }
+  
+    .column {
+      flex: 50%;
+    }
+  
+    .leftColumn{
+      margin:10%;
+  
+  
+    }
+   .rightColumn{
+  
+      margin:10%;
+  
+  
+  
+   }
+   .greenbox{
+  
+  
+  
+      min-width: 300px;
+      padding: 20px;
+      background: #164A41;
+      border-radius: 8px;
+      background-color: #164A41;
+  
+  
+  
+   }
+  
+   .text-color-white{
+      color: white;
+   }
+  
+   label{
+      color: #164A41;
+   }
+  select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+  
+  button {
+    padding: 19px 39px 18px 39px;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: all 350ms;
+    background-image: linear-gradient( 90deg,#4D774E 10%, #164A41 50% 100%);
+  }
+  
+  button:hover,
+  button:focus {
+    color: #BA3B0A;
+  }
+  
+  fieldset {
+    margin-bottom: 10px;
+    border: none;
+  }
+  
+  
+  
+  #plan{
+      height: 50px;
+  }
+  
+  @media (max-width: 900px) {
+      .container_inside {
+        flex-direction: column;
+      }
+    }
